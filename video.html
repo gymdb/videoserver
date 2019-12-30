@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Video.js | HTML5 Video Player</title>
+    <script src="player/video.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="player/video-js.css" type="text/css" media="screen" title="Video JS" charset="utf-8">
+    <meta charset="UTF-8">
+</head>
+</head>
+<body>
+
+<script language="javascript">
+    var fileParam = unescape(document.location.search.substring(1).split('=')[1]);
+    var fileName = fileParam.substr(0,fileParam.indexOf("&"));
+    <!-- document.write(fileName); -->
+    var path = unescape(document.location.search.substring(1).split('=')[2]);
+
+    document.write('<video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto"  width="640" height="480" data-setup=\'{"techOrder": ["html5"]}\'>');
+    document.write("<source src=\"data/videos/"+path+"/"+fileName+"\" type='video\/webm; codecs=\"vp8, vorbis\"' \/> ");
+    document.write("<source src=\"data/videos/"+path+"/"+fileName+"\" type='video\/mp4;  \/> ");
+    document.write('</video> ');
+</script>
+</body>
+</html>
