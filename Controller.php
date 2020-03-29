@@ -18,7 +18,7 @@ if (isset($_POST["operation"]))
     if ($fileId > 0)
     {
       $fileName = pathinfo($fileName, PATHINFO_FILENAME) . "_" . $fileId . "." . pathinfo($fileName, PATHINFO_EXTENSION);
-      move_uploaded_file($_FILES["video_file"]["tmp_name"], "/opt/lampp/htdocs/videoserver/data/videos/" . $video_class . "/" . $fileName);
+      move_uploaded_file($_FILES["video_file"]["tmp_name"], "./data/videos/" . $video_class . "/" . $fileName);
     }
 
     echo 'Video inserted';

@@ -8,5 +8,6 @@ CREATE TABLE `Media` (
   `subject` varchar(40) NOT NULL,
   `title` varchar(255) NOT NULL,
   `uploadedOn` bigint(20) NOT NULL,
-  `archived` tinyint(1) NOT NULL DEFAULT 0
+  `archived` tinyint(1) NOT NULL DEFAULT 0,
+   PRIMARY KEY(`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

@@ -6,7 +6,7 @@ include("dropDownData.php");
 
 <html>
 <head>
-  <title>Bootgrid Tutorial - Server Side Processing using Ajax PHP</title>
+  <title>Video Server</title>
 
   <link rel="stylesheet" href="libs/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="libs/css/jquery.bootgrid.css"/>
